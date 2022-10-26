@@ -53,6 +53,7 @@ public class UI {
             maintextPanel.setBackground(Color.black);
             window.add(maintextPanel);
 
+
             mainTextArea = new JTextArea("This is the main text area");
             mainTextArea.setBounds(100, 100, 600, 250);
             mainTextArea.setBackground(Color.black);
