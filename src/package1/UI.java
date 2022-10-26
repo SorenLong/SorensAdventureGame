@@ -12,8 +12,8 @@ public class UI {
     JLabel titleNameLabel, hpLabel, hpNumberLabel, weaponLabel, weaponNameLabel;
     JButton startButton, choice1, choice2, choice3, choice4;
     JTextArea mainTextArea;
-    Font titleFont = new Font("Time New Roman", Font.PLAIN, 90);
-    Font normalFont = new Font("Timess New Roman", Font.PLAIN, 26);
+    Font titleFont = new Font("Times New Roman", Font.BOLD, 90);
+    Font normalFont = new Font("Times New Roman", Font.BOLD, 26);
     public void createUI(Game.ChoiceHandler cHandler){
 
         //WINDOW
@@ -28,16 +28,16 @@ public class UI {
         titleNamePanel = new JPanel();
         titleNamePanel .setBounds(100, 100, 600, 500);
         titleNamePanel.setBackground(Color.black);
-        titleNameLabel = new JLabel("Adventure");
+        titleNameLabel = new JLabel("UNDERTALL");
         titleNameLabel.setForeground(Color.white);
         titleNameLabel.setFont(titleFont);
         titleNamePanel.add(titleNameLabel);
         startButtonPanel = new JPanel();
-        startButtonPanel.setBounds(300, 400, 200, 100);
-        startButtonPanel.setBackground(Color.ORANGE);
-        startButton = new JButton("START");
-        startButton.setBackground(Color.black);
-        startButton.setForeground(Color.red);
+        startButtonPanel.setBounds(300,400,200,100);
+        startButtonPanel.setBackground(Color.black);
+        startButton = new JButton("BEGIN");
+        startButton.setBackground(Color.green);
+        startButton.setForeground(Color.white);
         startButton.setFont(normalFont);
         startButton.setFocusPainted(false);
         startButton.addActionListener(cHandler);
@@ -125,14 +125,7 @@ public class UI {
         hpNumberLabel. setForeground(Color.white) ;
         hpNumberLabel. setFont(normalFont) ;
         playerPanel.add(hpNumberLabel) ;
-        weaponLabel = new JLabel("Weapon:");
-        weaponLabel.setForeground(Color.white) ;
-        weaponLabel.setFont(normalFont) ;
-        playerPanel.add(weaponLabel) ;
-        weaponNameLabel = new JLabel();
-        weaponNameLabel. setForeground(Color.white) ;
-        weaponNameLabel. setFont(normalFont) ;
-        playerPanel.add(weaponNameLabel) ;
+
 
         window.setVisible(true);
 
